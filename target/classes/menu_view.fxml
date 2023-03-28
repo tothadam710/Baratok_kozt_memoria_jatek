@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="428.0" prefWidth="0.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.memoria_jatek.ViewController.Menu">
+    <children>
+        <ImageView fitHeight="428.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/bk_bg.jpg" />
+            </image></ImageView>
+        <Button onMouseClicked="#goToPlay" layoutX="337.0" layoutY="381.0" mnemonicParsing="false" style="-fx-background-color: BLACK;" text="Játék" textFill="RED" />
+        <Button onMouseClicked="#kilep" layoutX="400.0" layoutY="381.0" mnemonicParsing="false" style="-fx-background-color: BLACK;" text="Villany Leó" textFill="RED" />
+    </children>
+</AnchorPane>

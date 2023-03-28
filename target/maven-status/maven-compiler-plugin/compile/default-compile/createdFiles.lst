@@ -1,0 +1,7 @@
+com\example\memoria_jatek\Model\Player.class
+com\example\memoria_jatek\Controller\Main.class
+module-info.class
+com\example\memoria_jatek\ViewController\Menu.class
+com\example\memoria_jatek\Controller\Controller.class
+com\example\memoria_jatek\ViewController\Game.class
+com\example\memoria_jatek\Model\MemoryCard.class
