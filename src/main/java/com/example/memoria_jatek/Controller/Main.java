@@ -9,7 +9,7 @@ public class Main  extends Application {
         Controller controller=new Controller(primaryStage); //Controller osztaly peldanyositasa a fopőrogramban
     }
 
-
+    //A program belépési pontja
     public static void main(String[]args){
         launch();
     }

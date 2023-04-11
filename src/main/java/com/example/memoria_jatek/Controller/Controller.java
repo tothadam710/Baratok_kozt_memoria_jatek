@@ -4,36 +4,41 @@ import com.example.memoria_jatek.ViewController.Game;
 import com.example.memoria_jatek.ViewController.Menu;
 import javafx.stage.Stage;
 
-import java.io.IOException;
+
+//Ez az oszály azért felel hogy a vezérlés a Menütől a játék főképernyójéig megfelelően működjön.
+
+
 
 
 public class Controller {
 
     private Stage stage;
 
+    //példányosít a Menü osztályból és meghívja a showView metódust ami a Menü kinézetéért felel
     public Controller(Stage stage) {
         this.stage = stage;
         Menu menu=Menu.showView(this,stage);
     }
 
-
-    public Boolean goToPlay()   {
+    //A Game osztáylból(ami a játék üzleti logikájáért felel) pédányosít és meghívja a Game osztályban a showView metódust ami a játék vizuális megjelenésért felel.
+    public void goToPlay()   {
         Game game = Game.showView(this,stage);
-        return true;
+
     }
 
-
-    public Boolean goToPlayAgain() {
+    //Erre azért van szükség hogyha a játékos újra akarja játszani a játlkot.(újra meghívja a játékot)
+    public void goToPlayAgain() {
 
         Game game =Game.showView(this,stage);
-        return true;
+
     }
 
-    public boolean kilep() {
+    //Kilép a játékból
+    public void kilep() {
 
         System.exit(0);
 
-        return true;
+
     }
 
 
