@@ -261,7 +261,7 @@ public class Game {
 
     }
 
-    // Ez a függvény egy logikai tipust ad vissza arra vonatkozóan hogy párt találtunk-e vagy nem(A fenti metódusban kerül vizsgálatra)
+    // Ez a függvény egy logikai tipust ad vissza arra vonatkozóan hogy megtaláltuk-e az összes párt azaz nyertünk-e vagy sem(végigiterál a kártyapárokon és megvizsgálja hogy mind felfordított-e)
     private static boolean checkWon(List<MemoryCard> cards) {
         for(MemoryCard card:cards){
             if(card.isFlipped()==false){
