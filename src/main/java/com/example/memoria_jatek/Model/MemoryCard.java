@@ -57,7 +57,7 @@ public class MemoryCard extends ImageView {
     }
 
 
-    // az equals és hashCode metódusok túlterhelése azzal a céllal hogy az equals az URL-juk es ID-juk alapján összehasonlítsa a kártáykat és hashCode amely az URL hash alapján hasonlít
+    // az equals és hashCode metódusok felülírása azzal a céllal hogy az equals az URL-juk es ID-juk alapján összehasonlítsa a kártáykat és hashCode amely az URL hash alapján hasonlít
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
